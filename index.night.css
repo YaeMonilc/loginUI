@@ -1,0 +1,10 @@
+.night{
+    --htmlBackground: rgb(24, 24, 24);
+    --layoutBackground: black;
+    --formLayoutBackground: rgba(0, 0, 0, .8);
+    --inputBorder: 1.8px solid rgba(255, 255, 255, 0);
+    --inputBorderFocus: 1.8px solid rgb(83, 123, 231);
+    --inputBackground: rgba(24, 24, 24, .95);
+    --inputColor: white;
+    --inputBorderSubmit: 0;
+}

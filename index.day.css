@@ -1,0 +1,10 @@
+.day{
+    --htmlBackground: white;
+    --layoutBackground: white;
+    --formLayoutBackground: rgba(255, 255, 255, 0.8);
+    --inputBorder: 1.8px solid rgba(0, 0, 0, .3);
+    --inputBorderFocus: 1.8px solid rgb(83, 123, 231);
+    --inputBackground: rgba(255, 255, 255, 0.65);
+    --inputColor: black;
+    --inputBorderSubmit: 1.8px solid rgba(0, 0, 0, .3);
+}

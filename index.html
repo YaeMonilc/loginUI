@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="day">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGINUI</title>
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+        <link rel="stylesheet" type="text/css" href="./index.night.css"/>
+        <link rel="stylesheet" type="text/css" href="./index.day.css"/>
+    </head>
+    <body>
+        <div id="toggle">
+            <input type="checkbox">
+            <span>夜间</span>
+        </div>
+        <div id="layout">
+            <img id="background" src="https://iw233.cn/api.php?sort=pc">
+            <div id="formLayout">
+                <img id="icon" src="https://img.alicdn.com/imgextra/i3/O1CN01Mn65HV1FfSEzR6DKv_!!6000000000514-55-tps-228-59.svg">
+                <form id="form" action="" method="post">
+                        <input id="account" type="text" placeholder="账号" >
+                        <input id="password" type="password" placeholder="密码" >
+                        <input id="submit" type="submit" value="登录">
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        $("#toggle > input").click(function(){
+            if($("#toggle > input").prop('checked')){
+                $("html").removeAttr("class","day")
+                $("html").attr("class","night")
+            }else{
+                $("html").removeAttr("class","night")
+                $("html").attr("class","day")
+            }
+        })
+    </script>
+</html>

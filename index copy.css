@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#layout{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    background-color: white;
+    overflow:hidden;
+    display: flex;
+}
+#background{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+#formLayout{
+    width: 300px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    padding: 80px 0 80px 0;
+    background: white;
+}
+#icon{
+    width: 200px;
+}
+#form{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+#account,#password{
+    width: 200px;
+    height: 35px;
+    border: 1.8px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+    outline: none;
+    transition: all 0.2s;
+}
+#account:focus,#password:focus{
+    border: 1.8px solid rgb(83, 123, 231);
+}
+#submit{
+    height: 40px;
+    background: white;
+    border: 1.8px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: all 0.2s;
+}
+#submit:active{
+    background: rgb(66, 119, 225);
+    border: 1.8px solid rgba(66, 119, 225, .3);
+}
